@@ -6,3 +6,4 @@ package: Custom
 dependencies:
   - migrate
   - migrate_source_csv
+  - migrate_tools
