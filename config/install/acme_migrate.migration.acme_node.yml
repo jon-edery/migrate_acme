@@ -1,7 +1,7 @@
 id: basics
 label: Import articles
 migration_groups:
-  - ACME import
+  - 'default'
 migration_dependencies: {}
 source:
   plugin: csv
