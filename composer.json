@@ -1,0 +1,14 @@
+{
+  "name": "drupal/migrate_acme",
+  "type": "drupal-module",
+  "description": "My Awesome Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/migrate_acme",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/migrate_acme",
+    "source": "http://cgit.drupalcode.org/migrate_acme"
+  },
+  "require": { }
+}
