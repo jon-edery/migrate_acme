@@ -2,6 +2,7 @@ id: basics
 label: Import articles
 migration_groups:
   - ACME import
+migration_dependencies: {}
 source:
   plugin: csv
   path: '/tmp/acme_articles.csv'
