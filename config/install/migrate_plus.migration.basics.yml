@@ -7,7 +7,7 @@ migration_group: null
 label: 'Import articles'
 source:
   plugin: csv
-  path: /tmp/acme_articles.csv
+  path: modules/contrib/migrate_acme/acme_articles.csv
   header_row_count: 1
   keys:
     - Id2
