@@ -7,9 +7,11 @@ migration_group: null
 label: 'Import articles'
 source:
   plugin: json_source
-  path: modules/contrib/migrate_acme/acme_articles.json
-  identifier: 'Id2'
-  identifier_depth: 1
+  headers:
+    Accept: 'application/json'
+  path: https://raw.githubusercontent.com/mchelen/migrate_acme/json/acme_articles.json
+  identifier: Id2
+  identifierDepth: 0
   fields:
     - Id2
     - title
