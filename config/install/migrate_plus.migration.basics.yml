@@ -8,7 +8,7 @@ label: 'Import articles'
 source:
   plugin: json_source
   headers:
-    Accept: 'application/json'
+    Accept: 'text/plain' # for github
   path: https://raw.githubusercontent.com/mchelen/migrate_acme/json/acme_articles.json
   identifier: Id2
   identifierDepth: 0
