@@ -14,6 +14,8 @@ source:
 process:
   title: title
   body: body
+  field_link/uri: link
+  field_link/title: link_title
   type:
     plugin: default_value
     default_value: article
