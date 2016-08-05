@@ -18,7 +18,7 @@ process:
   field_link/title: link_title
   type:
     plugin: default_value
-    default_value: article
+    default_value: example_content_type
 destination:
   plugin: 'entity:node'
 migration_dependencies: {  }
