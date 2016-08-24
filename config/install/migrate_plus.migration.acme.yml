@@ -1,0 +1,35 @@
+uuid: 9f6e52bb-55dd-435c-8cb0-ba80d6f74c74
+langcode: en
+status: true
+dependencies: {  }
+id: acme
+migration_tags: null
+migration_group: null
+label: 'Import Acme items'
+source:
+  plugin: csv
+  path: modules/contrib/migrate_acme/acme_articles.csv
+  header_row_count: 1
+  keys:
+    - Id
+process:
+  title: title
+  body: body
+  field_acme_link/uri: link
+  field_acme_link/title: link_title
+  field_acme_formatted/value: html_content
+  field_acme_formatted/format:
+    plugin: default_value
+    default_value: basic_html
+  field_acme_multivalue/value:
+    plugin: explode
+    delimter: '-'
+    source: array_content
+  field_acme_multi_alt/1: array1
+  field_acme_multi_alt/2: array2
+  type:
+    plugin: default_value
+    default_value: acme_item
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.acme_item.body
     - field.field.node.acme_item.field_acme_formatted
     - field.field.node.acme_item.field_acme_link
+    - field.field.node.acme_item.field_acme_multi_alt
     - field.field.node.acme_item.field_acme_multivalue
     - node.type.acme_item
   module:
@@ -44,6 +45,13 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+  field_acme_multi_alt:
+    weight: 36
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   field_acme_multivalue:
     weight: 35
     settings:
