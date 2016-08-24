@@ -1,0 +1,21 @@
+uuid: 7ddca6c5-578d-4a35-878b-5281f572f8c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acme_formatted
+    - node.type.acme_item
+  module:
+    - text
+id: node.acme_item.field_acme_formatted
+field_name: field_acme_formatted
+entity_type: node
+bundle: acme_item
+label: 'Acme Formatted'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

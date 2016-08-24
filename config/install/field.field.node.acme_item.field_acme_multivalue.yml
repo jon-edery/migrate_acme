@@ -1,0 +1,19 @@
+uuid: 7bab1d44-353e-4368-b6a6-b03e778fc187
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acme_multivalue
+    - node.type.acme_item
+id: node.acme_item.field_acme_multivalue
+field_name: field_acme_multivalue
+entity_type: node
+bundle: acme_item
+label: 'Acme Multivalue'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

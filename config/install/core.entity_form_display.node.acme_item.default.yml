@@ -1,17 +1,20 @@
+uuid: b9383b49-a846-4302-aa75-49ab32f7f331
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.example_content_type.body
-    - field.field.node.example_content_type.field_link
-    - node.type.example_content_type
+    - field.field.node.acme_item.body
+    - field.field.node.acme_item.field_acme_formatted
+    - field.field.node.acme_item.field_acme_link
+    - field.field.node.acme_item.field_acme_multivalue
+    - node.type.acme_item
   module:
     - link
     - path
     - text
-id: node.example_content_type.default
+id: node.acme_item.default
 targetEntityType: node
-bundle: example_content_type
+bundle: acme_item
 mode: default
 content:
   body:
@@ -27,13 +30,27 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
-  field_link:
+  field_acme_formatted:
+    weight: 34
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_acme_link:
     weight: 32
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+  field_acme_multivalue:
+    weight: 35
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   path:
     type: path
     weight: 30

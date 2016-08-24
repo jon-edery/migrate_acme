@@ -1,0 +1,52 @@
+uuid: 2c94a7f5-4ab2-405f-a5ed-40673c70a2e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.acme_item.body
+    - field.field.node.acme_item.field_acme_formatted
+    - field.field.node.acme_item.field_acme_link
+    - field.field.node.acme_item.field_acme_multivalue
+    - node.type.acme_item
+  module:
+    - link
+    - text
+    - user
+id: node.acme_item.default
+targetEntityType: node
+bundle: acme_item
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_acme_formatted:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_acme_link:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_acme_multivalue:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 100
+hidden: {  }

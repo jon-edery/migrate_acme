@@ -1,3 +1,4 @@
+uuid: 0ecfe8ad-e70a-4acf-b1ad-b6a081b53658
 langcode: en
 status: true
 dependencies:
@@ -8,8 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: example_content_type
-type: example_content_type
+name: 'Acme Item'
+type: acme_item
 description: ''
 help: ''
 new_revision: false
