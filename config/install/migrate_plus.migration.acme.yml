@@ -21,20 +21,19 @@ process:
   field_acme_formatted/format:
     plugin: default_value
     default_value: basic_html
-#  field_acme_multivalue/value:
-#    plugin: explode
-#    delimiter: '-'
-#    source: array_content
+  field_acme_multivalue:
+    plugin: explode
+    delimiter: '-'
+    source: array_content
 
   field_acme_multi_alt/1: array1
   field_acme_multi_alt/2: array2
 
-  field_acme_formatted_multi/1/value: array_html1
-  field_acme_formatted_multi/1/format:
-    plugin: default_value
-    default_value: basic_html
-
-
+  field_acme_formatted_multi:
+    plugin: explode
+    delimiter: '-'
+    source: array_content
+    
 
   type:
     plugin: default_value
