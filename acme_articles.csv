@@ -1,4 +1,4 @@
 Id,title,body,link,link_title,html_content,array_content,array1,array2
-1,title 1,some body text 1,http://example.com,link 1,<p>a <a href="http://example.com">test</a></p>,foo-bar-baz,fuzz,buzz
-2,title 2,some body text 2,http://test.com,link 2,<p>a <a href="http://example.com">test</a></p>,foo-bar-baz,fuzz,buzz
-3,title 3,some body text 3,http://drupal.org,link 3,<p>a <a href="http://example.com">test</a></p>,foo-bar-baz,fuzz,buzz
+1,title 1,some body text 1,http://example.com,link 1,"<p>a <a href=\"http://example.com\">test</a></p>",foo-bar-baz,fuzz,buzz
+2,title 2,some body text 2,http://test.com,link 2,"<p>a <a href=\"http://example.com\">test</a></p>",foo-bar-baz,fuzz,buzz
+3,title 3,some body text 3,http://drupal.org,link 3,"<p>a <a href=\"http://example.com\">test</a></p>",foo-bar-baz,fuzz,buzz
