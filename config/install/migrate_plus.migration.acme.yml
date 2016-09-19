@@ -7,42 +7,23 @@ migration_tags: null
 migration_group: null
 label: 'Import Acme items'
 source:
-  plugin: json_source
-  headers:
-    Accept: 'application/json'
-  path: https://raw.githubusercontent.com/mchelen/migrate_acme/json/acme_articles.json
-  identifier: Id2
-  identifierDepth: 1
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  urls: http://drupal.dev/sites/default/files/acme_articles.json
+  item_selector: articles
   fields:
-    - Id2
-    - title
-    - body
-process:
-  title: title
-  body: body
-  field_acme_link/uri: link
-  field_acme_link/title: link_title
-  field_acme_formatted/value: html_content
-  field_acme_formatted/format:
-    plugin: default_value
-    default_value: basic_html
-  field_acme_multivalue:
-    plugin: explode
-    delimiter: '-'
-    source: array_content
-
-  field_acme_multi_alt/1: array1
-  field_acme_multi_alt/2: array2
-
-  field_acme_formatted_multi:
-    plugin: explode
-    delimiter: '-'
-    source: array_content
-    
-
+    -
+      name: machine_name
+      label: 'Unique identifier'
+      selector: Id2
+    -
+      name: friendly_name
+      label: 'Friendly name'
+      selector: title
+destination:
+  plugin: 'entity:node'
   type:
     plugin: default_value
     default_value: acme_item
-destination:
-  plugin: 'entity:node'
 migration_dependencies: {  }

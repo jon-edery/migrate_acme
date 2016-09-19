@@ -1,9 +1,9 @@
 name: Migrate ACME
 type: module
-description: Example using Migrate API from CSV
+description: Example using Migrate API
 core: 8.x
 package: Custom
 dependencies:
   - migrate
-  - migrate_source_json
+  - migrate_plus
   - migrate_tools

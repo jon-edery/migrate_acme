@@ -4,12 +4,28 @@
       {
         "Id2":"1",
         "title":"title 1",
-        "body":"some body text 1"
+        "body":"some body text 1",
+        "link":"http://example.com",
+        "link_title":"link 1",
+        "html_content":"<p>a <a href='http://example.com'>test</a></p>",
+        "array_content":"foo-bar-baz",
+        "array1":"fuzz",
+        "array2":"buzz",
+        "array_html1":"<p>a <a href='http://example.com'>test</a></p>",
+        "array_html2":"<p>a <a href='http://example.com'>test</a></p>"
       },
       {
         "Id2":"2",
         "title":"title 2",
-        "body":"some body text 2"
+        "body":"some body text 2",
+        "link":"http://example2.com",
+        "link_title":"link 2",
+        "html_content":"<p>a <a href='http://example2.com'>test</a></p>",
+        "array_content":"foo-bar-baz",
+        "array1":"fuzz",
+        "array2":"buzz",
+        "array_html1":"<p>a <a href='http://example2.com'>test</a></p>",
+        "array_html2":"<p>a <a href='http://example2.com'>test</a></p>"
       }
     ]
 }
