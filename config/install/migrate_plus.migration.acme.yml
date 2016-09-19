@@ -21,6 +21,9 @@ source:
       name: friendly_name
       label: 'Friendly name'
       selector: title
+  ids:
+    machine_name:
+      type: string
 destination:
   plugin: 'entity:node'
   type:
