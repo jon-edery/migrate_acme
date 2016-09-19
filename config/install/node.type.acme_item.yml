@@ -1,0 +1,18 @@
+uuid: 0ecfe8ad-e70a-4acf-b1ad-b6a081b53658
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Acme Item'
+type: acme_item
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

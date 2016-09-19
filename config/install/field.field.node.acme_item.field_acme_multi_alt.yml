@@ -1,0 +1,19 @@
+uuid: 8b75bc14-264e-426d-b4d0-21a2b8a0c4c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acme_multi_alt
+    - node.type.acme_item
+id: node.acme_item.field_acme_multi_alt
+field_name: field_acme_multi_alt
+entity_type: node
+bundle: acme_item
+label: 'Acme Multi Alt'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
